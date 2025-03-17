@@ -19,8 +19,8 @@ if (C.length>z){
 
 const L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 const L2 = ["Apple", "Banana", "Kiwi", "Orange"];
-L1.forEach(findTheBanana)
-L2.forEach(findTheBanana)
+//L1.forEach(findTheBanana)
+//L2.forEach(findTheBanana)
 
 if (window.location.href.includes("index.html")){
     greetingFunc();
@@ -51,5 +51,41 @@ function greetingFunc(){
         document.getElementById("greetings").innerHTML = "Good evening, I am Katherine";
     } else {
         document.getElementById("greetings").innerHTML = "Good night, I am Katherine";
+    }
+}
+
+function addYear(){
+    var d = new Date(); 
+    var y = d.getFullYear();
+    document.getElementById("copyYear").innerHTML = y + " © Katherine Geng";
+}
+
+function showList(){
+    document.getElementById("see-more").style.display = "none";
+    document.getElementById("fun-list").style.display = "block";
+}
+
+$("#read-less").click(function(){
+    $("#full-intro").hide();
+    $("#read-less").hide();
+    $("#read-more").show();
+    $("#intro").show();
+});
+
+$("#read-more").click(function(){
+    $("#full-intro").show();
+    $("#read-less").show();
+    $("#read-more").hide();
+    $("#intro").hide();
+});
+
+function validate(){
+    var userName = document.getElementById("name");
+    var userEmail = document.getElementById("email");
+    var userText = document.getElementById("comment");
+    var msg = document.getElementById("ValidateMsg");
+
+    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()){
+        msg.innerHTML = "Please fill out the form correctly so I can get back to you";
     }
 }

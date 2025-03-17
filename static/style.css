@@ -20,6 +20,10 @@ header{
     color: #d9758f;
 }
 
+span{
+    text-align: center;
+}
+
 a.navigation{
     text-decoration: none;
     color: #d9758f;
@@ -69,4 +73,18 @@ tr:nth-child(odd){
     padding: 12px;
     font-weight: 400;
     font-size: 16px;
+}
+
+#fun-list{
+    display: none;
+}
+
+#full-intro, #read-less{
+    display: none;
+}
+
+#ValidateMsg{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
 }
