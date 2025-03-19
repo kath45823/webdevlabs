@@ -24,20 +24,26 @@
             <a href="contact.html" class = "navigation">Contact</a>
         </nav>
     </header>
-    <div class = "main">
-        <h2>Contact Me</h2>
-        <form>
-            <label for ="name">Name:</label>
-            <input type="text" name = "name" id = "name" required><br><br>
-            <label for ="email">Email:</label>
-            <input type="email" name = "email" id = "email" required><br><br>
-            <label for ="comment">Comment:</label>
-            <textarea name = "comment" id = "comment" rows = "10" cols = "30" required></textarea>
-            <br>
-            <input type="submit" value = "SUBMIT" id = "submit" onclick="validate()">
-            <br><br>
-        </form>
-        <p id = "ValidateMsg"></p>
+    <div class = "mainLayout">
+        <div class = "item1">
+            <h2>Find Me</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19402.728151548134!2d139.53019857708853!3d35.32142493932675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845f2df49bc05%3A0x1ec393b02d6bef4c!2sKotoku-in!5e0!3m2!1sen!2sus!4v1742398831565!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class = "item2">
+            <h2>Contact Me</h2>
+            <form>
+                <label for ="name">Name:</label>
+                <input type="text" name = "name" id = "name" required><br><br>
+                <label for ="email">Email:</label>
+                <input type="email" name = "email" id = "email" required><br><br>
+                <label for ="comment">Comment:</label>
+                <textarea name = "comment" id = "comment" rows = "10" cols = "30" required></textarea>
+                <br>
+                <input type="submit" value = "SUBMIT" id = "submit" onclick="validate()">
+                <br><br>
+            </form>
+            <p id = "ValidateMsg"></p>
+        </div>
         <br>
         <table>
             <tr>

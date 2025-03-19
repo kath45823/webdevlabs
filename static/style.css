@@ -75,9 +75,9 @@ tr:nth-child(odd){
     font-size: 16px;
 }
 
-#fun-list{
+/*#fun-list{
     display: none;
-}
+}*/
 
 #full-intro, #read-less{
     display: none;
@@ -87,4 +87,38 @@ tr:nth-child(odd){
     color: red;
     font-weight: bold;
     font-size: 20px;
+}
+
+.funIMG{
+    border-radius: 100%;
+}
+
+.container{
+    border-radius: 100%; 
+    display: inline-block;
+    border-radius: 10%; 
+    box-shadow: 10px 10px #d9758f;
+    background-color: #ffd1dd;
+}
+
+.container button{
+    background-color: white;
+    color: #d9758f;
+    border-radius: 12px;
+    border: 4px solid #d9758f;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+iframe{
+    width: 500px;
+    height: 400px;
+}
+
+.mainLayout{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }

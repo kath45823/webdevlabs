@@ -26,6 +26,10 @@ if (window.location.href.includes("index.html")){
     greetingFunc();
 }
 
+if (window.location.href.includes("fun.html")){
+    getAdvice();
+}
+
 function SumNPrint(x1, x2){
     var x3 = x1+x2
     console.log(x3);
@@ -60,10 +64,10 @@ function addYear(){
     document.getElementById("copyYear").innerHTML = y + " © Katherine Geng";
 }
 
-function showList(){
+/*function showList(){
     document.getElementById("see-more").style.display = "none";
     document.getElementById("fun-list").style.display = "block";
-}
+}*/
 
 $("#read-less").click(function(){
     $("#full-intro").hide();
@@ -88,4 +92,16 @@ function validate(){
     if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()){
         msg.innerHTML = "Please fill out the form correctly so I can get back to you";
     }
+}
+
+function getAdvice(){
+    fetch("https://api.adviceslip.com/advice")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("adviceText").innerText = data.slip.advice;
+    })
+    .catch(error => {
+        console.error("Error fetching advice: ", error);
+        document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again.";
+    });
 }

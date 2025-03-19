@@ -24,16 +24,31 @@
             <a href="contact.html" class = "navigation">Contact</a>
         </nav>
     </header>
-    <div class = "main">
-        <h2>Things I love to do for fun</h2>
-        <button id = "see-more" onclick = "showList()">Click to see...</button>
-        <ul id = "fun-list">
-            <li>Drawing</li>
-            <li>Boxing</li>
-            <li>Crochet</li>
-            <li>Rock Climbing</li>
-            <li>Yoga</li>
-        </ul>
+    <div class = "mainLayout">
+        <div class = "item1">
+            <h2>Things I love to do for fun</h2>
+            <ul id = "fun-list">
+                <li>Drawing</li>
+                <li>Boxing</li>
+                <li>Crochet</li>
+                <li>Rock Climbing</li>
+                <li>Yoga</li>
+            </ul>
+        </div>
+        <div class = "item2">
+            <img src = "../static/images/water.jpeg" class = "funIMG" width="500px">
+        </div>
+        <div class = "item3">
+            <iframe src = "https://www.youtube.com/embed/HptHiJJJwBM" title="Song"></iframe>
+        </div>
+        <div class = "item4">
+            <div class = "container">
+                <h2>Need Some Advice?</h2>
+                <p id = "adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick = "getAdvice()">Get Advice</button>
+            </div>
+        </div>
+        <!--<button id = "see-more" onclick = "showList()">Click to see...</button>-->
     </div>
     <footer>
         <p id = "copyYear">© Katherine Geng</p>
